@@ -1,0 +1,544 @@
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.slides-navigation .prev, 
+.slides-navigation .next {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.slides-navigation a.prev {
+    left:20px;
+    background-image: url(../assets/Icons/left.png);
+}
+
+.slides-navigation a.next {
+    right:20px;
+    background-image: url(../assets/Icons/right.png);
+}
+
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.titleMessage .heading p{
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.titleMessage .heading .main {
+    font-size: 32px;
+}
+
+.titleMessage .heading .sub {
+    font-size: 20px;
+}
+
+.section {
+    padding: 100px 0;
+    /* background-color:rgb(214, 199, 174); */
+    /* background-color:rgb(45, 39, 39); */
+    background-color: black;
+    color: #fff;
+
+}
+
+.aboutImage {
+    width: 100%;
+    border-radius: 45px;
+}
+
+.skillSection {
+    /* background-color:rgb(193, 163, 163); */
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.skillText {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+.skill {
+    text-align: center;
+
+}
+
+
+.chart {
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    /* margin-left: 25px; */
+    text-align: center;
+    cursor:grab; 
+}
+
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.chart .percent {
+    display: inline-block;
+    line-height: 152px;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.chart .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+
+.squareItem {
+	margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer {
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #444;
+	border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	width: 30%;
+	border-bottom: 2px solid #444;
+}
+
+
+.squareInnerContainer:before {
+	right: 0px;
+}
+
+.squareInnerContainer:after {
+	left: 0px
+}
+
+
+.squareContent h2 {
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #e74c3c;
+}
+
+.squareContent h3 {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.squareIcon {
+	position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444;
+}
+
+.contactButton {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.contactButton:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+}
+
+.filter a {
+	color: #bdc3c7;
+	border: 1px solid #bdc3c7;
+	padding: 10px 18px;
+	display: block;
+}
+
+.filter li {
+	display: inline-block;
+	padding: 5px
+}
+
+.filter .current {
+	background-color: #e74c3c;;
+	border-color: #e74c3c;
+	color: #fff;
+}
+
+.filter {
+	text-align: center;
+	width: 100%;
+}
+
+.section .heading {
+	text-align: center;
+	padding-bottom: 40px;
+	width: 100%;
+}
+
+
+
+.projects-section {
+    text-align: center;
+    background: black; /* or any background color you prefer */
+    padding: 20px;
+  }
+
+.projects-section h2 {
+    margin: 0;
+    padding: 0;
+    color: #64ffda;
+}
+  
+  .project-card {
+    display: inline-block;
+    background: white; /* card background color */
+    margin: 10px;
+    width: 300px; 
+    height: 700px; /* adjust as needed */
+    border-radius: 8px; /* rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    overflow: hidden; /* ensures the content fits within the rounded corners */
+  }
+  
+  .project-card img {
+    width: 100%; /* ensures the image covers the card width */
+    height: auto; /* maintains the aspect ratio of the image */
+    display: block; /* remove inline spacing */
+  }
+  
+  .project-card {
+    transition: filter 0.3s; /* Smooth transition for the filter effect */
+    /* Rest of your image styling */
+  }
+  
+  .project-card:hover {
+    filter: brightness(50%); /* Adjust filter as needed for the green hue */
+  }
+  
+
+.project-card p {
+    height: 150px;
+    color: #bcbaba;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.project-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+  .project-links a {
+    text-decoration: none;
+    color:#64ffda; /* link color */
+    margin: 5px;
+    padding: 5px 5px;
+    border: 1px solid #64ffda; /* border to look like buttons */
+    border-radius: 4px; /* rounded corners for the links/buttons */
+    display: inline-block; /* to enable margin and padding */
+    transition: background-color 0.3s, color 0.3s; /* transition for hover effect */
+  }
+  
+  .project-links a:hover {
+    background-color: #64ffda; /* background color on hover */
+    color: white; /* text color on hover */
+  }
+    
+
+
+
+
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: black;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 36px;
+    margin: 25px 0;
+    color: #64ffda;
+  }
+
+  .project-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 300px;
+    color: white;
+  }
+
+  .project-card2 {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 300px;
+    color: white;
+  }
+
+
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .project-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .technologies {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .technologies span {
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .github-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .github-link:hover {
+    color: #777; /* Change color on hover */
+  }
+
+  .projects-header {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0;
+    color:black;
+  }
+
+
+  
+  .work-experience-section {
+    background-color: #222; /* Background color to match your project section */
+    color: white;
+    padding: 0 20px;
+    font-size: 16px;
+    width: 100%;
+
+  }
+  
+  .work-experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .job-titles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .job-title {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent; /* Adjust color to match design */
+  }
+  
+  .job-title.active {
+    border-bottom: 3px solid #64ffda; /* Active tab indicator */
+  }
+  
+  .job-details {
+    display: none; /* Hide all job details by default */
+  }
+  
+  .job-details.active {
+    display: block; /* Show active job details */
+  }
+    
+
+
+.copyrightSection {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 5px;
+    text-align: center;
+}
+
+#navigation {
+	background-color: #222;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    text-align: center;
+	color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+    padding: 0 40px;
+
+}
+
+.navbar-toggler-icon {
+	background: url(../assets/Icons/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation {
+	position: fixed;
+	top: 0;
+}
+
+.loader {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+
+.loader .inner {
+	width: 100%;
+	height: 100%;
+	background: url(../assets/loader.gif) center center no-repeat;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 30px; /* Adjust as needed */
+    background-color:#64ffda; /* Use your color scheme */
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Optional for rounded corners */
+    font-weight: bold; /* Optional for bold text */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+    text-align: center;
+  }
+  
+  .resume-button:hover {
+    background-color: gray; /* Darker shade on hover for visual feedback */
+  }
+
+
+  .title {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    color:white;
+  }
+.title span {
+    color: #64ffda;
+}
+  .date {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+    color:white;
+    font-weight: lighter;
+  }
+
+.nameHi {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #64ffda;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #64ffda;
+    text-align: center;
+}
+
+.connect {
+/* padding: 0 100px; */
+margin: 0 100px;
+}
+
+.socialMedia {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    margin: 20px 0;
+    font-size: 40px;
+    color: #64ffda;
+    
+}
+.logoColor {
+    color: #64ffda;
+}
+
+.aboutMe {
+    padding-top: 30px;
+    font-size: 18px;
+ 
+}
